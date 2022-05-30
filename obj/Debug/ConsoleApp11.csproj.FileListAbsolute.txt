@@ -1,0 +1,16 @@
+D:\ConsoleApp11\ConsoleApp11\bin\Debug\ConsoleApp11.exe.config
+D:\ConsoleApp11\ConsoleApp11\bin\Debug\ConsoleApp11.exe
+D:\ConsoleApp11\ConsoleApp11\bin\Debug\ConsoleApp11.pdb
+D:\ConsoleApp11\ConsoleApp11\obj\Debug\ConsoleApp11.csproj.AssemblyReference.cache
+D:\ConsoleApp11\ConsoleApp11\obj\Debug\ConsoleApp11.csproj.SuggestedBindingRedirects.cache
+D:\ConsoleApp11\ConsoleApp11\obj\Debug\ConsoleApp11.csproj.CoreCompileInputs.cache
+D:\ConsoleApp11\ConsoleApp11\obj\Debug\ConsoleApp11.exe
+D:\ConsoleApp11\ConsoleApp11\obj\Debug\ConsoleApp11.pdb
+C:\Users\ПК\Desktop\ConsoleApp11\bin\Debug\ConsoleApp11.exe.config
+C:\Users\ПК\Desktop\ConsoleApp11\bin\Debug\ConsoleApp11.exe
+C:\Users\ПК\Desktop\ConsoleApp11\bin\Debug\ConsoleApp11.pdb
+C:\Users\ПК\Desktop\ConsoleApp11\obj\Debug\ConsoleApp11.csproj.AssemblyReference.cache
+C:\Users\ПК\Desktop\ConsoleApp11\obj\Debug\ConsoleApp11.csproj.SuggestedBindingRedirects.cache
+C:\Users\ПК\Desktop\ConsoleApp11\obj\Debug\ConsoleApp11.csproj.CoreCompileInputs.cache
+C:\Users\ПК\Desktop\ConsoleApp11\obj\Debug\ConsoleApp11.exe
+C:\Users\ПК\Desktop\ConsoleApp11\obj\Debug\ConsoleApp11.pdb
