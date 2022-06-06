@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Windows.Shapes;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
+using Microsoft.Win32;
+using System.IO;
 
 namespace FrontEnd
 {
@@ -15,8 +17,10 @@ namespace FrontEnd
         public List<double> T = new List<double>() { 0 }; //начальное положение Т
         public List<double> Vx = new List<double>(); //координаты скорости V
         public List<double> Vy = new List<double>(); //координаты скорости V
+        
         public Flight(double V, double a)
         {
+            
             a = a * Math.PI / 180; //перевод значения угла в градусы
             const double g = 9.806; //значение своюодного падения
             const double m = 10; //масса 
@@ -100,11 +104,14 @@ namespace FrontEnd
             btn.Margin = new Thickness(1); //значение поля
             btn.Padding = new Thickness(10); //пространство между дочерним элемнтом и границей или фоном
             btn.Click += ButtonOnClick; //событие, происходящие при нажатии 
-            stackChild2.Children.Add(btn); 
-        
+            stackChild2.Children.Add(btn);
+
             
+           
 
             void ButtonOnClick(object sender, RoutedEventArgs args)
+
+          
             {
                 Flight b = new Flight(Convert.ToDouble(txtbox1.Text), Convert.ToDouble(txtbox2.Text)); //передача данных из TextBox 
                  
@@ -118,8 +125,9 @@ namespace FrontEnd
                 sv.Content = enter;
                  
                 //рисует траекторию
-                Polyline poly = new Polyline();  //класс рисует последовательность соединенных прямых линий
-                canv.Children.Add(poly); 
+                Polyline poly = new Polyline();  //класс рисует последовательность соединенных прямых линий                             
+                canv.Children.Add(poly);      
+                
                 Point[] pts = new Point[b.T.Count]; //описывает точки вершин
                 for (int i = 0; i < b.T.Count; i++) //цикл, передающий координаты 
                 {
@@ -137,7 +145,18 @@ namespace FrontEnd
                     aB.To = 17; //значение которое достигает при анимации
                     aB.FillBehavior = FillBehavior.Stop;  //после анимации возвращает к первоначальному виду
                     btn.BeginAnimation(Button.FontSizeProperty, aB); //класс, где происходит анимация 
+
                 }
+
+             
+                OpenFileDialog dialog = new OpenFileDialog();
+              
+                if (dialog.ShowDialog() == true)
+                    foreach (string filename in dialog.FileNames)
+
+                        txtbox1.Text = File.ReadAllText(dialog.FileName);
+
+
 
             }
         }
